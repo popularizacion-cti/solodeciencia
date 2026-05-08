@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
     </div> -->
 
     <script>
-        const targetDate = new Date("May 3, 2026 23:59:59").getTime();
+        const targetDate = new Date("April 19, 2026 23:59:59").getTime();
 
         setInterval(() => {
             const now = new Date().getTime();
@@ -86,17 +86,24 @@
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/50"></div>
 
         <div class="relative z-10 px-4 animate__animated animate__fadeInUp">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4">Solo de Ciencia <span class="text-brand">PERÚ</span></h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 mt-60">Solo de Ciencia <span class="text-brand">PERÚ</span></h1>
             <p class="text-xl md:text-2xl mb-6 max-w-2xl mx-auto font-light">4ta Edición del Concurso de <b>Monólogos Científicos</b>. </br> ¡La ciencia como nunca la viste!</p>
             <!-- <div class="text-2xl flex flex-wrap justify-center gap-4 mb-8">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4rp9SOAYNJRyiIWE1SNh_0Hy8l-hzjJ1FbiVlCI6fD0M0DQ/viewform" target="_blank" class="bg-brand hover:opacity-70 text-white font-bold px-8 py-3 rounded-full  transition">&nbsp; POSTULA AQUÍ &nbsp;</a>
             </div> -->
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
                 <a href="https://drive.google.com/file/d/1KPQ4-EdDI2WrSjULyogF2XbIBrceijVL/view" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Bases 2026</a>
                 <a href="https://www.youtube.com/watch?v=752QMSj6KCA" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Charla informativa</a>
                 <a href="https://youtube.com/playlist?list=PLyJ_ldfo1onLn4jCgQZy5netBliJvNs5J&si=0ANUp9yxyftDXhZ4" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Ediciones Previas</a>
             </div>
+
+            <div class="text-2xl flex flex-wrap justify-center gap-4 mb-8">
+                <a href="#finalistasjr" class="bg-brand hover:opacity-70 text-white font-bold px-8 py-3 rounded-full  transition">&nbsp; Finalistas JUNIOR &nbsp;</a>
+                <a href="#finalistassr" class="bg-brand hover:opacity-70 text-white font-bold px-8 py-3 rounded-full  transition">&nbsp; Finalistas SENIOR &nbsp;</a>
+            </div>
+
         </div>
+        
     </header>
 
     <section id="bases" class="py-20 container mx-auto px-6">
@@ -118,12 +125,39 @@
             <div class="bg-white p-8 rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent">
                 <div class="text-red-600 mb-4 text-3xl">👩‍💻</div>
                 <h3 class="text-xl font-bold mb-2">Formulario de contacto</h3>
-                <p class="text-slate-600 mb-4">Si deseas mantenerte informado sobre las charlas informativas y charlas de capacitación, déjanos tus datos en este formulario.</p>
+                <p class="text-slate-600 mb-4">Si deseas mantenerte informado sobre el evento. déjanos tus datos en este formulario.</p>
                 <a href="https://forms.gle/mpxC7GBJcp9DyfNK6" target=_blank class="text-brand font-bold hover:underline">Formulario →</a>
             </div>
         </div>
     </section>
     
+    <section id="finalistasjr" class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Finalistas categoría <span class="text-brand">JUNIOR</span> 👩🏻‍🎓</h2>
+    <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-accent">
+        <div id="grid-junior" class="grid md:grid-cols-5 gap-4">
+            <p class="font-bold text-slate-800">Apellidos</p>
+            <p class="font-bold text-slate-800">Nombres</p>
+            <p class="font-bold text-slate-800">Lugar de origen</p>
+            <p class="font-bold text-slate-800">Situación</p>
+            <p class="font-bold text-slate-800 border-b md:border-none pb-2">Modalidad</p>
+            </div>
+    </div>
+</section>
+
+<section id="finalistassr" class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Finalistas categoría <span class="text-brand">SENIOR</span> 👨🏻‍🔬</h2>
+    <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-500">
+        <div id="grid-senior" class="grid md:grid-cols-5 gap-4">
+            <p class="font-bold text-slate-800">Apellidos</p>
+            <p class="font-bold text-slate-800">Nombres</p>
+            <p class="font-bold text-slate-800">Lugar de origen</p>
+            <p class="font-bold text-slate-800">Situación</p>
+            <p class="font-bold text-slate-800 border-b md:border-none pb-2">Modalidad</p>
+        </div>
+    </div>
+    * Revisar comunicado a su correo electrónico
+</section>
+
 
     <section class="py-16 bg-slate-50">
     <div class="container mx-auto px-6 text-center">
@@ -159,17 +193,64 @@
                 <p class="text-slate-400 text-sm">📍 Av. del Aire 485, San Borja, Lima</p>
                 <p class="text-slate-400 text-sm">☎️ 0051-1-399-0030 anexo 1220</p>
                 <p class="text-slate-400 text-sm">📧 popularizacion@concytec.gob.pe</p>
-                <!-- <div class="flex gap-4 mt-4">
+                <div class="flex gap-4 mt-4">
                     <span class="text-xl hover:text-brand cursor-pointer">FB</span>
                     <span class="text-xl hover:text-brand cursor-pointer">IG</span>
                     <span class="text-xl hover:text-brand cursor-pointer">YT</span>
-                </div> -->
+                </div>
             </div>
         </div>
-        <!-- <div class="text-center mt-8 text-xs text-slate-500 uppercase tracking-widest">
+        <div class="text-center mt-8 text-xs text-slate-500 uppercase tracking-widest">
             © 2026 CONCYTEC | Unidad de popularización de la ciencia, tecnología e innovación
-        </div> -->
+        </div>
     </footer>
+
+<script>
+const SHEET_ID = '1kbtr3Yz_g2JwzBI4E-msR2LnqYEV_wTfXJ9RbTByoG8'; // Reemplaza con tu ID
+
+async function cargarFinalistas(gid, elementId) {
+    // La URL usa tqx=out:csv pero para mayor facilidad usaremos el formato de visualización
+    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&gid=${gid}`;
+    
+    try {
+        const response = await fetch(url);
+        const text = await response.text();
+        // Limpiamos la respuesta de Google para obtener un JSON puro
+        const json = JSON.parse(text.substr(47).slice(0, -2));
+        const rows = json.table.rows;
+        const container = document.getElementById(elementId);
+
+        // Añadimos 'index' para saber en qué fila estamos
+        rows.forEach((row, index) => {
+            // Si el índice es 0 (la primera fila), no hacemos nada y saltamos a la siguiente
+            if (index === 0) return;
+
+            // Validar que la fila tenga contenido (que la primera celda no sea nula)
+            if (!row.c || !row.c[0]) return;
+
+            // El resto del código se mantiene igual
+            row.c.forEach(cell => {
+                const valor = cell ? cell.v : "";
+                const p = document.createElement('p');
+                p.className = "text-slate-600 mb-2 border-b border-slate-100 md:border-none pb-1";
+                p.textContent = valor;
+                container.appendChild(p);
+            });
+        });
+        
+    } catch (error) {
+        console.error("Error cargando datos de la hoja " + gid, error);
+    }
+}
+
+// Llamamos a las funciones al cargar la página
+// El GID suele ser 0 para la Hoja 1. Para la Hoja 2, busca el número en la URL de tu Sheet (?gid=12345)
+document.addEventListener('DOMContentLoaded', () => {
+    cargarFinalistas('0', 'grid-junior');      // '0' es usualmente la primera pestaña
+    cargarFinalistas('1071357888', 'grid-senior'); // Reemplaza con el GID de la Hoja 2
+});
+</script>
+
 
 </body>
 </html>
