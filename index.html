@@ -7,15 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-        theme: {
-            extend: {
-            colors: {
-                brand: '#C72F86',   // Magenta
-                dark: '#1B1B4B',    // Azul Noche
-                accent: '#00A8B5',  // Cian
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#C72F86',   // Magenta
+                        dark: '#1B1B4B',    // Azul Noche
+                        accent: '#00A8B5',  // Cian
+                    }
+                }
             }
-            }
-        }
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -50,7 +50,7 @@
         </div>
     </div> -->
 
-    <script>
+    <!-- <script>
         const targetDate = new Date("April 19, 2026 23:59:59").getTime();
 
         setInterval(() => {
@@ -67,7 +67,7 @@
             document.getElementById("minutes").innerText = m < 10 ? "0"+m : m;
             document.getElementById("seconds").innerText = s < 10 ? "0"+s : s;
         }, 1000);
-    </script>
+    </script> -->
 
 
 
@@ -79,15 +79,15 @@
             loop 
             playsinline 
             class="absolute inset-0 w-full h-full object-cover opacity-40">
-            <source src="assets/video/sdcperu.mp4" type="video/mp4">
+            <source src="assets/video/sdc2024.mp4" type="video/mp4">
             Tu navegador no soporta videos.
         </video>
 
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/50"></div>
 
         <div class="relative z-10 px-4 animate__animated animate__fadeInUp">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 mt-60">Solo de Ciencia <span class="text-brand">PERÚ</span></h1>
-            <p class="text-xl md:text-2xl mb-6 max-w-2xl mx-auto font-light">4ta Edición del Concurso de <b>Monólogos Científicos</b>. </br> ¡La ciencia como nunca la viste!</p>
+            <h1 class="text-4xl md:text-7xl font-bold mb-4 pt-24 md:pt-40 animate__animated animate__fadeInUp">Solo de Ciencia <span class="text-brand">PERÚ</span></h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl mx-auto font-light">4ta Edición del Concurso de <b>Monólogos Científicos</b>. <br> ¡La ciencia como nunca la viste!</p>
             <!-- <div class="text-2xl flex flex-wrap justify-center gap-4 mb-8">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4rp9SOAYNJRyiIWE1SNh_0Hy8l-hzjJ1FbiVlCI6fD0M0DQ/viewform" target="_blank" class="bg-brand hover:opacity-70 text-white font-bold px-8 py-3 rounded-full  transition">&nbsp; POSTULA AQUÍ &nbsp;</a>
             </div> -->
@@ -108,32 +108,36 @@
 
 
     
-    <section id="finalistasjr" class="py-20 container mx-auto px-6">
+<section id="finalistasjr" class="py-20 container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-12">Finalistas categoría <span class="text-brand">JUNIOR</span> 👩🏻‍🎓</h2>
-    <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-accent">
-        <div id="grid-junior" class="grid md:grid-cols-5 gap-4">
+    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border-t-4 border-accent">
+        <div class="hidden md:grid md:grid-cols-5 gap-4 border-b pb-4 mb-4">
             <p class="font-bold text-slate-800">Apellidos</p>
             <p class="font-bold text-slate-800">Nombres</p>
             <p class="font-bold text-slate-800">Lugar de residencia</p>
             <p class="font-bold text-slate-800">Situación</p>
-            <p class="font-bold text-slate-800 border-b md:border-none pb-2">Modalidad</p>
+            <p class="font-bold text-slate-800">Modalidad</p>
+        </div>
+        <div id="grid-junior" class="grid grid-cols-1 md:grid-cols-5 gap-y-6 md:gap-4">
             </div>
     </div>
 </section>
 
 <section id="finalistassr" class="py-20 container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-12">Finalistas categoría <span class="text-brand">SENIOR</span> 👨🏻‍🔬</h2>
-    <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-500">
-        <div id="grid-senior" class="grid md:grid-cols-5 gap-4">
+    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border-t-4 border-accent">
+        <div class="hidden md:grid md:grid-cols-5 gap-4 border-b pb-4 mb-4">
             <p class="font-bold text-slate-800">Apellidos</p>
             <p class="font-bold text-slate-800">Nombres</p>
             <p class="font-bold text-slate-800">Lugar de residencia</p>
             <p class="font-bold text-slate-800">Situación</p>
-            <p class="font-bold text-slate-800 border-b md:border-none pb-2">Modalidad</p>
+            <p class="font-bold text-slate-800">Modalidad</p>
         </div>
+        <div id="grid-senior" class="grid grid-cols-1 md:grid-cols-5 gap-y-6 md:gap-4">
+            </div>
     </div>
-    * Revisar comunicado a su correo electrónico
-</section>
+    <p class="text-xs text-slate-500 mt-4 italic">* Revisar comunicado a su correo electrónico</p>
+</section>>
 
 
     <section id="bases" class="py-20 container mx-auto px-6">
@@ -210,36 +214,49 @@
     </footer>
 
 <script>
-const SHEET_ID = '1kbtr3Yz_g2JwzBI4E-msR2LnqYEV_wTfXJ9RbTByoG8'; // Reemplaza con tu ID
+
+const SHEET_ID = '1kbtr3Yz_g2JwzBI4E-msR2LnqYEV_wTfXJ9RbTByoG8'; 
 
 async function cargarFinalistas(gid, elementId) {
-    // La URL usa tqx=out:csv pero para mayor facilidad usaremos el formato de visualización
     const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&gid=${gid}`;
     
     try {
         const response = await fetch(url);
         const text = await response.text();
-        // Limpiamos la respuesta de Google para obtener un JSON puro
         const json = JSON.parse(text.substr(47).slice(0, -2));
         const rows = json.table.rows;
         const container = document.getElementById(elementId);
 
-        // Añadimos 'index' para saber en qué fila estamos
+        // Nombres de los campos para las etiquetas en celular
+        const labels = ["Apellidos", "Nombres", "Lugar de residencia", "Situación", "Modalidad"];
+
         rows.forEach((row, index) => {
-            // Si el índice es 0 (la primera fila), no hacemos nada y saltamos a la siguiente
-            if (index === 0) return;
+            if (index === 0) return; // Omitir cabecera del Excel
+            if (!row.c || !row.c[0]) return; // Omitir filas vacías
 
-            // Validar que la fila tenga contenido (que la primera celda no sea nula)
-            if (!row.c || !row.c[0]) return;
-
-            // El resto del código se mantiene igual
-            row.c.forEach(cell => {
+            // Iteramos las 5 celdas de la fila del participante
+            row.c.forEach((cell, cellIndex) => {
                 const valor = cell ? cell.v : "";
+                
                 const p = document.createElement('p');
-                p.className = "text-slate-600 mb-2 border-b border-slate-100 md:border-none pb-1";
-                p.textContent = valor;
+                // Clases base y diseño adaptativo:
+                // En móviles añadimos un pseudo-título usando un prefijo simulado o clases.
+                p.className = "text-slate-600 text-sm md:text-base border-b border-slate-100 md:border-none pb-2 md:pb-0 flex flex-col md:block";
+                
+                // Formato responsive inteligente:
+                // En celulares genera: "APELLIDOS: Perez" / En PC solo genera: "Perez"
+                p.innerHTML = `
+                    <span class="text-[10px] uppercase font-bold text-slate-400 md:hidden">${labels[cellIndex]}</span>
+                    <span class="text-slate-800 md:text-slate-600">${valor}</span>
+                `;
+                
                 container.appendChild(p);
             });
+
+            // Añadimos un separador visual transparente que solo se ve en móviles para distanciar un participante de otro
+            const divider = document.createElement('div');
+            divider.className = "col-span-1 border-b-2 border-dashed border-slate-200 my-2 md:hidden";
+            container.appendChild(divider);
         });
         
     } catch (error) {
@@ -247,12 +264,11 @@ async function cargarFinalistas(gid, elementId) {
     }
 }
 
-// Llamamos a las funciones al cargar la página
-// El GID suele ser 0 para la Hoja 1. Para la Hoja 2, busca el número en la URL de tu Sheet (?gid=12345)
 document.addEventListener('DOMContentLoaded', () => {
-    cargarFinalistas('0', 'grid-junior');      // '0' es usualmente la primera pestaña
-    cargarFinalistas('1071357888', 'grid-senior'); // Reemplaza con el GID de la Hoja 2
+    cargarFinalistas('0', 'grid-junior');      
+    cargarFinalistas('1071357888', 'grid-senior'); 
 });
+
 </script>
 
 
